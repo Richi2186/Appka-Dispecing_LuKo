@@ -27,6 +27,12 @@
   --text-main: #f8fafc;
   --text-sub: #94a3b8;
   --accent-color: #38bdf8;
+  /* Prispôsobenie loga v dlaždici pre obdĺžnikový tvar */
+.icon img.icon-logo {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
 }
 
 body {
@@ -316,6 +322,13 @@ a {
   </div>
 </a>
 
+<a href="https://intranet.dpb.sk/" target="_blank" onclick="countClick('Intranet')" class="tile">
+    <div class="card red">
+        <div class="icon"><img src="logo_dpb.png" alt="DPB" class="icon-logo"></div>
+        <div class="card-title">Intranet</div>
+    </div>
+</a>
+    
 <a href="http://172.16.20.23/fotografie1/index.php/2026" target="_blank" onclick="countClick('Fotografie')" class="tile">
       <div class="card blue">
         <div class="icon"><i class="fa-solid fa-camera"></i></div>
